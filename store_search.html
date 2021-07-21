@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200">
+    <meta name="description" content="selecto">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="::selecto coffee::">
+    <meta property="og:url" content="http://l9980214.com/selectocoffee/">
+    <meta property="og:image" content="http://l9980214.com/selectocoffee/selecto_og.png">
+    <meta property="og:description" content="아메리카노 셀렉트샵 셀렉토커피">
+    <title>Selecto Coffee</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico?v=1">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+  </head>
+  <body>
+      <div id="skipNavi">
+          <a href="#gnb">주메뉴 바로가기</a>
+          <a href="#container">본문바로가기</a>
+      </div>
+      <div id="wrap">
+          <!-- 헤더 -->
+          <header id="header">
+              <div class="header_inner">
+                  <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="셀렉토커피" /></a></h1>
+                  <div class="util_wrap">
+                      <ul class="lang">
+                          <li><a href="#" class="active">KO</a></li>
+                          <li><a href="#">CH</a></li>
+                      </ul>
+                      <!-- 통합검색버튼 -->
+                      <div class="total_search">
+                          <input type="text" class="input_search" placeholder="SEARCH" />
+                          <a href="#" class="btn_search"><span class="blind">통합검색버튼</span></a>
+                      </div>
+                      <!-- // 통합검색버튼 -->
+                  </div>
+                  <nav class="gnb">
+                      <ul class="depth1">
+                          <li>
+                              <a href="brand_story.html">ABOUT</a>
+                              <ul class="depth2">
+                                  <li><a href="brand_story.html">브랜드 스토리</a></li>
+                                  <li><a href="brand_story.html">HISTORY</a></li>
+                                  <li><a href="brand_story.html"> 스페셜 티 커피</a></li>
+                                  <li><a href="brand_story.html">셀렉토 캠페인</a></li>
+                                  <li><a href="brand_story.html">로스팅 하우스</a></li>
+                                  <li><a href="brand_story.html">셀렉토 뉴크롭원두</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="menu.html">MENU</a>
+                              <ul class="depth2">
+                                  <li><a href="menu.html">신메뉴</a></li>
+                                  <li><a href="menu.html">음료</a></li>
+                                  <li><a href="menu.html">디저트</a></li>
+                                  <li><a href="menu.html">MD</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">EVENT</a>
+                              <ul class="depth2">
+                                  <li><a href="#">이벤트</a></li>
+                                  <li><a href="#">셀렉토 SNS</a></li>
+                                  <li><a href="#">제작지원</a></li>
+                                  <li><a href="#">보도자료</a></li>
+                                  <li><a href="#">공지사항</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="store_search.html">STORE</a>
+                              <ul class="depth2">
+                                  <li><a href="store_search.html">매장찾기</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="franchise_inquiry.html">FRANCHISE</a>
+                              <ul class="depth2">
+                                  <li><a href="franchise_inquiry.html">브랜드 경쟁력</a></li>
+                                  <li><a href="franchise_inquiry.html">창업시스템</a></li>
+                                  <li><a href="franchise_inquiry.html">창업비용</a></li>
+                                  <li><a href="franchise_inquiry.html">인테리어</a></li>
+                                  <li><a href="franchise_inquiry.html">리모델링 창업지원</a></li>
+                                  <li><a href="franchise_inquiry.html">실시간 추천점포</a></li>
+                                  <li><a href="franchise_inquiry.html">셀렉토 창업스토리</a></li>
+                                  <li><a href="franchise_inquiry.html">창업문의</a></li>
+                                  <li><a href="franchise_inquiry.html">사업설명회</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">COMPANY</a>
+                              <ul class="depth2">
+                                  <li><a href="#">본사소개</a></li>
+                                  <li><a href="#">인재채용</a></li>
+                                  <li><a href="#">오시는 길</a></li>
+                                  <li><a href="#">입점 및 제휴문의</a></li>
+                                  <li><a href="#">고객문의</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </header>
+          <!-- // 헤더 -->
+          <div id="container" class="store_search_container">
+              <!-- 컨텐츠 -->
+              <div class="contents">
+                  <div id="map"></div>
+                  <div class="store_search">
+                      <div class="search_inner">
+                          <h3 class="tit">매장찾기</h3>
+                          <form>
+                              <fieldset>
+                                  <legend>매장찾기</legend>
+                                  <!-- 도/시 선택 -->
+                                  <div class="select_wrap city">
+                                      <select>
+                                          <option>도/시 선택</option>
+                                          <option value="서울">서울</option>
+                                          <option value="인천">인천</option>
+                                          <option value="대전">대전</option>
+                                          <option value="대구">대구</option>
+                                          <option value="광주">광주</option>
+                                          <option value="울산">울산</option>
+                                          <option value="부산">부산</option>
+                                          <option value="경기">경기</option>
+                                          <option value="강원">강원</option>
+                                          <option value="세종">세종</option>
+                                          <option value="충북">충북</option>
+                                          <option value="충남">충남</option>
+                                          <option value="전북">전북</option>
+                                          <option value="전남">전남</option>
+                                          <option value="경북">경북</option>
+                                          <option value="경남">경남</option>
+                                          <option value="제주">제주</option>
+                                      </select>
+                                  </div>
+                                  <!-- // 도/시 선택 -->
+                                  <!-- 구/군 선택 -->
+                                  <div class="select_wrap">
+                                      <select>
+                                          <option>구/군 선택</option>
+                                      </select>
+                                  </div>
+                                  <!-- // 구/군 선택 -->
+                                  <!-- 매장명 -->
+                                  <div class="store_name_wrap">
+                                      <input type="text" placeholder="매장명">
+                                  </div>
+                                  <!-- // 매장명 -->
+                                  <!-- 옵션 선택-->
+                                  <div class="btn_option_wrap">
+                                    <button class="btn_toggle btn_option" type="button">옵션 선택</button>
+                                    <!-- 옵션 선택 리스트 -->
+                                    <div class="list_option">
+                                        <h4>제공 서비스</h4>
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" id="service1" class="blind">
+                                            <label for="service1">무선인터넷 가능</label>
+                                            <img src="images/store_search/option_wifi.gif" alt="옵션">
+                                        </div>
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" id="service2" class="blind">
+                                            <label for="service2">흡연시설 보유</label>
+                                            <img src="images/store_search/option_smoking.gif" alt="옵션">
+                                        </div>
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" id="service3" class="blind">
+                                            <label for="service3">주차 가능</label>
+                                            <img src="images/store_search/option_parking.gif" alt="옵션">
+                                        </div>
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" id="service4" class="blind">
+                                            <label for="service4">야외테라스 보유</label>
+                                            <img src="images/store_search/option_terrace.gif" alt="옵션">
+                                        </div>
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" id="service5" class="blind">
+                                            <label for="service5">모바일 가맹점</label>
+                                            <img src="images/store_search/option_mobile.gif" alt="옵션">
+                                        </div>
+                                    </div>
+                                    <!-- // 옵션 선택 리스트 -->
+                                  </div>
+                                  <!-- // 옵션 선택 -->
+                                  <!-- 검색 버튼 -->
+                                  <div class="btn_search_wrap">
+                                      <a href="#" class="btn btn_search">검색</a>
+                                  </div>
+                                  <!-- // 검색 버튼 -->
+                                  <p class="total_search">총 <strong>5건</strong> 검색되었습니다.</p>
+                              </fieldset>
+                          </form>
+                      </div>
+                      <div class="list_search_result">
+                          <ul>
+                              <li>
+                                  <a href="#">
+                                      <p class="store_name">왕십리점</p>
+                                      <p class="store_add">서울 성동구 왕십리로 315</p>
+                                      <p class="store_tel">T. 02-2299-9552</p>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <p class="store_name">신당동점</p>
+                                      <p class="store_add">서울 중구 다산로34길 39 1층</p>
+                                      <p class="store_tel">T. 02-2237-7067</p>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <p class="store_name">장안동점</p>
+                                      <p class="store_add">서울 동대문구 장한로5길 17</p>
+                                      <p class="store_tel">T. 
+                                        02-3390-3058</p>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <p class="store_name">동묘역점</p>
+                                      <p class="store_add">서울 종로구 지봉로 18</p>
+                                      <p class="store_tel">T. 02-2231-9497</p>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <p class="store_name">서울숲IT캐슬점</p>
+                                      <p class="store_add">서울 성동구 광나루로 130 서울숲 IT 캐슬 1층 104호</p>
+                                      <p class="store_tel">T. 02-6310-6060</p>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <!-- // 컨텐츠 -->
+          </div>
+          <!-- 푸터 -->
+          <footer id="footer">
+              <div class="footer_inner">
+                  <div class="mark_slider_wrap">
+                      <div class="swiper-container mark_slider">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_01.jpg" alt="마크" />
+                                  </div>
+                                  <p>식품 안전 경영<br>시스템인증</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_02.jpg" alt="마크" />
+                                  </div>
+                                  <p>식품 안전<br>시스템인증</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_03.png" alt="마크" />
+                                  </div>
+                                  <p>2017 소비자가 뽑은<br>서비스 만족대상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_04.png" alt="마크" />
+                                  </div>
+                                  <p>2016 소비자가 뽑은<br>서비스 만족대상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_05.gif" alt="마크" />
+                                  </div>
+                                  <p>2016 대한민국<br>창업대상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_06.jpg" alt="마크" />
+                                  </div>
+                                  <p>한국프랜차이즈<br>모범프랜차이즈부분 수상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_07.jpg" alt="마크" />
+                                  </div>
+                                  <p>한국프랜차이즈<br>연구개발부분 수상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_08.jpg" alt="마크" />
+                                  </div>
+                                  <p>산업통상자원부<br>장관상수상</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_08.jpg" alt="마크" />
+                                  </div>
+                                  <p>산업통상자원부<br>장관상수상22</p>
+                              </div>
+                              <div class="swiper-slide">
+                                  <div class="img_wrap">
+                                      <img src="images/mark_08.jpg" alt="마크" />
+                                  </div>
+                                  <p>산업통상자원부<br>장관상수상22</p>
+                              </div>
+                          </div>
+                          <div class="swiper-button-prev btn_mark_arrow"></div>
+                          <div class="swiper-button-next btn_mark_arrow"></div>
+                      </div>
+                  </div>
+                  <div class="menu_wrap">
+                      <ul>
+                          <li><a href="#">회사소개</a></li>
+                          <li><a href="#">인재채용</a></li>
+                          <li><a href="#">오시는길</a></li>
+                          <li><a href="#">개인정보취급방침</a></li>
+                      </ul>
+                  </div>
+                  <div class="address_wrap">
+                      <address>서울시 구로구 디지털로26길 61 에이스하이엔드타워 2차 1402호,1404호(구 : 구로3동 222-14)</address>
+                      <p class="info_tit">
+                          <span>대표 : 황규연</span>
+                          <span>사업자등록번호 : 109-81-99153</span>
+                          <span>TEL. 1600-5649</span>
+                          <span>FAX. 02-6340-1701</span>
+                      </p>
+                      <p class="copy">COPYRIGHT ㈜맥스원이링크 ALL RIGHTS RESERVED.</p>
+                  </div>
+                  <div class="sns_wrap">
+                      <p class="footer_sns_txt">Follow us</p>
+                      <ul class="footer_sns_icon">
+                          <li>
+                              <a href="https://www.facebook.com/selectocoffee?fref=ts" target="_blank"><img
+                                      src="images/sns_facebook.png" alt="페이스북"></a>
+                          </li>
+                          <li>
+                              <a href="http://blog.naver.com/maxone01" target="_blank"><img src="images/sns_blog.png"
+                                      alt="블로그"></a>
+                          </li>
+                          <li>
+                              <a href="https://instagram.com/selecto_coffee/" target="_blank"><img
+                                      src="images/sns_instagram.png" alt="인스타그램"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="top_wrap">
+                  <a class="btn_top" href="#">맨 위로 가기</a>
+              </div>
+          </footer>
+          <!-- // 푸터 -->
+      </div>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/main.js?v=<?php echo time(); ?>"></script>
+      <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b8cc664a1492507a47be07c91b59261"></script>
+      <script src="js/map.js?v=<?php echo time(); ?>"></script>
+  </body>
+</html>
